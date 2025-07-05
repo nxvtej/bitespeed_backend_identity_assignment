@@ -6,6 +6,6 @@ import { identityController } from './controllers/contactControllers';
 const app = express();
 app.use(express.json());
 
-app.post("/identity", identityController)
+app.post("/identify", identityController)
 
 export default app;

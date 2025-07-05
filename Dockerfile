@@ -25,7 +25,7 @@ COPY init.sql /init.sql
 EXPOSE 3000 5432
 
 CMD su postgres -c "/usr/bin/postgres -D /var/lib/postgresql/data &" && \
-    sleep 5 && \
+    sleep 3 && \
     psql -U postgres -f /init.sql && \
     npx prisma generate && \
     npx prisma migrate deploy && \
