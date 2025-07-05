@@ -5,13 +5,15 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
   // output   = "../src/generated/prisma"
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
 }
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://myuser:mysecretpassword@localhost:5432/mydb"
+  // url      = "postgresql://myuser:mysecretpassword@localhost:5432/mydb"
+  url      = env("DATABASE_URL")
 }
 
 model contact {

@@ -5,8 +5,8 @@ import axios from "axios";
 async function test() {
 	const response = await axios
 		.post("http://localhost:3000/identity", {
-			phoneNumber: "1234567890",
-			email: "test@example.com",
+			phoneNumber: "450090",
+			email: "te@exe.com",
 		})
 		.then((res) => res)
 		.catch((err) => {
