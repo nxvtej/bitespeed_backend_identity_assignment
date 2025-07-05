@@ -6,7 +6,7 @@ async function test() {
 	const response = await axios
 		.post("http://localhost:3000/identity", {
 			phoneNumber: "450090",
-			email: "te@exe.com",
+			email: "te@exame.com",
 		})
 		.then((res) => res)
 		.catch((err) => {
