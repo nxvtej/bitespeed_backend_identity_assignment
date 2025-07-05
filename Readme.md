@@ -1,6 +1,4 @@
-<!-- @format -->
-
-# Identity Recon API
+## Identity Recon API
 
 Run it using Docker
 
